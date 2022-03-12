@@ -5,11 +5,11 @@ Json test for python.
 Python 3 for Windows/Linux/MacOS.
 
 ### Feature
-3. json-dumps.py    ---- Use json dump, transition normal data to json data.
-4. json-loads.py    ---- Use json loads, transition json data to normal data.
+1. json-dumps.py    ---- Use json dump, transition normal data to json data.
+2. json-loads.py    ---- Use json loads, transition json data to normal data.
 
 ### Example:
-1. Json dump Test:
+1. Json dumps Test:
 ```console
 $ python json-dumps.py
 
