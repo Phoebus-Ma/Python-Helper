@@ -5,13 +5,15 @@ File IO for python.
 Python 3 for Windows/Linux/MacOS.
 
 ### Feature
-1. read-file.py     ---- Use .
-2. write-file.py    ---- Use .
+1. file-read.py     ---- Use read, read file data.
+2. file-write.py    ---- Use write, create/write file data.
+3. string-io.py     ---- StringIO read/write data in memory.
+4. bytes-io.py      ---- BytesIO read/write binary data in memory.
 
 ### Example:
 1. Read file Test:
 ```console
-$ python read-file.py
+$ python file-read.py
 
 0 1 2
 --------------
@@ -36,7 +38,7 @@ This is python file io test file.
 
 2. Write file Test:
 ```console
-$ python write-file.py
+$ python file-write.py
 
 ----Test 1----
 0 1 2 3 456 789
