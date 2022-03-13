@@ -9,6 +9,8 @@ Python 3 for Windows/Linux/MacOS.
 2. file-write.py    ---- Use write, create/write file data.
 3. string-io.py     ---- StringIO read/write data in memory.
 4. bytes-io.py      ---- BytesIO read/write binary data in memory.
+5. file-directory.py---- File or directory create, copy, move, rename, delete, etc.
+6. file-pickling.py ---- Data serialization.
 
 ### Example:
 1. Read file Test:
