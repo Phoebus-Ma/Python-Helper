@@ -1,5 +1,5 @@
 ###
-# TCP server use multi thread example.
+# TCP server use multi process example.
 # 
 # License - MIT.
 ###
@@ -7,11 +7,11 @@
 import os
 import time
 import socket
-from threading import Thread
+from multiprocessing import Process
 
 
-# Thread.
-def thread_function(sock, addr):
+# Process.
+def process_function(sock, addr):
 # {
     sock.send(b'Connected')
 
@@ -41,11 +41,11 @@ def main():
     host_name   = socket.gethostname()
     host_ip     = socket.gethostbyname(host_name)
 
-    # Binding port, default max 65535.
+    # Binding port.
     # Use host ip or 127.0.0.1
     sock.bind((host_ip, 65532))
 
-    # Listen port.
+    # Listen port, default max 65535.
     sock.listen(8)
     print('TCP Server running...')
 
@@ -54,9 +54,9 @@ def main():
         sck, addr = sock.accept()
         print('Client %s:%s connect.' % addr)
 
-        # Create sub thread.
-        thrd = Thread(target = thread_function, args = (sck, addr))
-        thrd.start()
+        # Create sub Process.
+        proc = Process(target = process_function, args = (sck, addr))
+        proc.start()
 # }
 
 
