@@ -47,7 +47,7 @@ def main():
 
     # Listen port.
     sock.listen(8)
-    print('Server running...')
+    print('TCP Server running...')
 
     # Accept.
     while True:
