@@ -26,7 +26,7 @@ class FruitsHandler(xml.sax.ContentHandler):
     # {
         self.tmpdata = tag
 
-        if 'fruits' == tag:
+        if 'Fruits' == tag:
             title = attributes['title']
 
             print('-------------------------')
@@ -82,4 +82,3 @@ def main():
 # Program entry.
 if '__main__' == __name__:
     main()
-
