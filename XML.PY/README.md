@@ -15,10 +15,31 @@ Python 3 for Windows/Linux/MacOS.
 ```console
 $ python sax-decode.py
 
+-------------------------
+Title: Apple
+price: 10
+counts: 100
+description: Red round fruit.
+-------------------------
+Title: Banana
+price: 2.5
+counts: 123
+description: Yellow stick fruit.
+-------------------------
+Title: Pear
+price: 1.8
+counts: 256
+description: Yellow oval fruit.
+-------------------------
+Title: Orange
+price: 2
+counts: 300
+description: Orange round fruit.
 ```
 
 2. XML SAX encode test:
 ```console
 $ python sax-encode.py
 
+Saved XML OK.
 ```

@@ -26,7 +26,11 @@ class FruitsHandler(xml.sax.ContentHandler):
     # {
         self.tmpdata = tag
 
-        if 'Fruits' == tag:
+        if 'Market' == tag:
+            merchandise = attributes['merchandise']
+            print('--------%s--------' % merchandise)
+
+        if 'Fruit' == tag:
             title = attributes['title']
 
             print('-------------------------')

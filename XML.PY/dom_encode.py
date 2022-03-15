@@ -43,7 +43,7 @@ def main():
     root_node = doc.createElement('Market')
 
     # Add root node attribute information.
-    root_node.setAttribute('merchandise', 'Vegetable')
+    root_node.setAttribute('merchandise', 'Vegetables')
 
     # Add the root node to the newly created blank document.
     doc.appendChild(root_node)
@@ -83,6 +83,8 @@ def main():
     doc.writexml(f, indent = '\t', addindent = '\t', newl = '\n', encoding = 'utf-8')
 
     f.close()
+
+    print('Saved XML OK.')
 # }
 
 
