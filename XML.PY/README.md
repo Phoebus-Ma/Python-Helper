@@ -37,9 +37,9 @@ counts: 300
 description: Orange round fruit.
 ```
 
-2. XML SAX encode test:
+2. XML DOM encode test:
 ```console
-$ python sax-encode.py
+$ python dom_encode.py
 
 Saved XML OK.
 ```
