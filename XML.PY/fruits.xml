@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<market merchandise="Fruits">
+
+    <fruits title="Apple">
+        <price>10</price>
+        <counts>100</counts>
+        <description>Red round fruit</description>
+    </fruits>
+
+    <fruits title="Banana">
+        <price>2.5</price>
+        <counts>123</counts>
+        <description>Yellow stick fruit</description>
+    </fruits>
+
+    <fruits title="Pear">
+        <price>1.8</price>
+        <counts>256</counts>
+        <description>Yellow oval fruit</description>
+    </fruits>
+
+    <fruits title="Orange">
+        <price>2</price>
+        <counts>300</counts>
+        <description>Orange round fruit</description>
+    </fruits>
+
+</market>
