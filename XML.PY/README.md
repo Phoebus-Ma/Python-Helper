@@ -1,5 +1,5 @@
 ### Description
-Json test for XML.
+XML test for python.
 
 ### Platform
 Python 3 for Windows/Linux/MacOS.
@@ -39,7 +39,7 @@ description: Orange round fruit.
 
 2. XML DOM encode test:
 ```console
-$ python dom_encode.py
+$ python dom-encode.py
 
 Saved XML OK.
 ```
