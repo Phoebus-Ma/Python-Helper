@@ -17,7 +17,6 @@ Python 3 for Windows/Linux/MacOS.
 7. process-manager.py ---- Use manager for interprocess communication.
 8. daemon-mulproc.py---- Daemon multiprocessing, When the parent process exits, the daemon process also exits.
 9. daemon-unix.py   ---- Daemon process for Unix-like platform, The state of the parent process does not affect the child process.
-10. daemon-win.py   ---- Daemon process for Windows platform, The state of the parent process does not affect the child process.
 
 ### Example:
 

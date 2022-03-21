@@ -8,16 +8,16 @@ Python 3 for Windows/Linux/MacOS.
 
 ### Feature
 
-1. web-wsgi.py      ---- Web Server Gateway Interface test.
-2. web-flask.py     ---- Web server use flask.
+1. server-wsgi.py      ---- Web Server Gateway Interface test.
+2. server-flask.py     ---- Web server use flask.
 
 ### Example:
 
-1. Web WSGI test:
+1. Web WSGI server test:
 *After the server is started, enter 127.0.0.1:65531 in the browser.*
 
 ```console
-$ python web-wsgi.py
+$ python server-wsgi.py
 
 Web server start!
 Enter this URL in your browser: 127.0.0.1:65531.
@@ -26,15 +26,15 @@ Ctrl+C to stop the server.
 127.0.0.1 - - [19/Mar/2022 23:30:18] "GET /favicon.ico HTTP/1.1" 200 22
 ```
 
-2. Web Flask test:
+2. Web Flask server test:
 
 *To use this routine you should first install flask using PIP*.
 
 ```console
 $ pip install flask
-$ python web-flask.py
+$ python server-flask.py
 
- * Serving Flask app 'web-flask' (lazy loading)
+ * Serving Flask app 'server-flask' (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
