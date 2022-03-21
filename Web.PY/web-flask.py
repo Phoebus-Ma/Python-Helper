@@ -1,5 +1,5 @@
 ###
-# Python thread test.
+# Python flask test.
 # 
 # License - MIT
 ###

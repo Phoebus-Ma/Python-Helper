@@ -1,5 +1,5 @@
 ###
-# Python thread test.
+# Python wsgi test.
 # 
 # License - MIT
 ###
