@@ -11,7 +11,7 @@ from urllib import request
 # Main function.
 def main():
 # {
-    url = 'https://kaifa.baidu.com/'
+    url = 'https://www.kernel.org/'
     
     f = open('TestPage.html', 'wb')
 
