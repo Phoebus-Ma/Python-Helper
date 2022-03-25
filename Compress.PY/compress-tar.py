@@ -4,7 +4,6 @@
 # License - MIT.
 ###
 
-from importlib.resources import path
 import os
 import tarfile
 
