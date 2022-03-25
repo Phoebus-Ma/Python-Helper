@@ -14,7 +14,8 @@ Python 3 for Windows/Linux/MacOS.
 2. compress-tar.py      ---- Tar compress/uncompress example.
 3. compress-7z.py       ---- 7zip compress/uncompress example.
 4. compress-gz.py       ---- Gzip compress/uncompress example.
-
+5. compress-bz2.py      ---- Bzip2 compress/uncompress example.
+6. compress-xz.py       ---- Xz compress/uncompress example.
 
 ### Example:
 
