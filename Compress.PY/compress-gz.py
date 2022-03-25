@@ -8,8 +8,8 @@ import os
 import gzip
 
 
-# gzip_lines_uncompress - Uncompress gzip file.
-def gzip_lines_uncompress(islines):
+# gzip_uncompress - Uncompress gzip file.
+def gzip_uncompress(islines):
 # {
     with gzip.open(gzip_name, 'rb') as fd_gz:
         with open('gz_' + file_name, 'wb') as fd:
@@ -20,8 +20,8 @@ def gzip_lines_uncompress(islines):
 # }
 
 
-# gzip_lines_compress - Compress gzip file.
-def gzip_lines_compress(islines):
+# gzip_compress - Compress gzip file.
+def gzip_compress(islines):
 # {
     with gzip.open(gzip_name, 'wb') as fd_gz:
         with open(file_name, 'rb') as fd:
@@ -36,10 +36,10 @@ def gzip_lines_compress(islines):
 def main():
 # {
     # Example 1: Compress gzip file.
-    gzip_lines_compress(False)
+    gzip_compress(False)
 
     # Example 2: Uncompress gzip file.
-    gzip_lines_uncompress(True)
+    gzip_uncompress(True)
 
     return 0
 # }
