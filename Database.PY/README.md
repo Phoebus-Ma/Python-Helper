@@ -10,7 +10,9 @@ Python 3 for Windows/Linux/MacOS.
 
 ### Feature
 
-1. db-sqlite3.py      ---- Sqlite 3 database test example.
+1. db-sqlite3.py        ---- Sqlite 3 database test example.
+2. db-mongodb.py        ---- MongoDB database test example.
+3. db-mysql.py          ---- MySQL database test example.
 
 
 ### Example:
@@ -57,8 +59,9 @@ Example 9 ------------------
 Example 10 ------------------
 ```
 
-2. Database test:
+2. MongoDB test:
 
 ```console
+$ python db-mongodb.py
 
 ```
