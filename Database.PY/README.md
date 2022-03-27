@@ -15,6 +15,23 @@ Python 3 for Windows/Linux/MacOS.
 3. db-mysql.py          ---- MySQL database test example.
 
 
+### Installation
+
+1. Sqlite3
+
+No, Python has sqlite3 built in.
+
+2. MongoDB
+
+2.1 Download and install MongoDB: https://www.mongodb.com/try/download/community .
+
+2.2 Install MongoDB driver, Select the Python driver here: pip install pymongo .
+
+3. MySQL
+
+3.1 Download and install MySQL:  .
+
+
 ### Example:
 
 1. Sqlite3 test:

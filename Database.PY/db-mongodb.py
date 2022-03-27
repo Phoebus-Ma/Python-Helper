@@ -6,6 +6,9 @@
 
 import os
 
+# pip install pymongo.
+import pymongo
+
 
 # Main function.
 def main():
