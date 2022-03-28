@@ -1,20 +1,28 @@
 ### Description
+
 Multi-thread for python.
 
+
 ### Platform
+
 Python 3 for Windows/Linux/MacOS.
 
+
 ### Feature
-1. thread.py        ---- Use threading create thread, multi platform.
-2. thread-pool.py   ---- Use threading pool, this is third library.
-3. thread-lock.py   ---- Use threading lock, Resource access with thread locks.
-4. thread-queue.py  ---- Use threading and queue for interthread communication.
-5. thread-event.py  ---- Use threading event for interthread communication.
-6. thread-rlock.py  ---- Use threading rlock for interthread communication.
-7. thread-semaphore.py ---- Use threading semaphores for interthread communication.
-8. thread-condition.py ---- Use threading condition for interthread communication.
+
+1. thread.py            ---- Use threading create thread, multi platform.
+2. thread-pool.py       ---- Use threading pool, this is third library.
+3. thread-lock.py       ---- Use threading lock, Resource access with thread locks.
+4. thread-queue.py      ---- Use threading and queue for interthread communication.
+5. thread-event.py      ---- Use threading event for interthread communication.
+6. thread-rlock.py      ---- Use threading rlock for interthread communication.
+7. thread-semaphore.py  ---- Use threading semaphores for interthread communication.
+8. thread-condition.py  ---- Use threading condition for interthread communication.
+9. daemon-threading.py  ---- Use threading create daemon thread.
+
 
 ### Example:
+
 1. Thread Test:
 ```console
 $ python thread.py
