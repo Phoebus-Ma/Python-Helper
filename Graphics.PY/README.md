@@ -11,7 +11,7 @@ Python 3 for Windows/Linux/MacOS.
 ### Feature
 
 1. graph-turtle.py          ---- Use turtle to draw lines.
-2. graph-tkinter.py         ---- Use tkinter to gui programming.
+2. graph-tkinter.py         ---- Use tkinter create simple calculator.
 
 
 ### Example:
