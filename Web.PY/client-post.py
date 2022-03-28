@@ -33,6 +33,13 @@ class login_github():
     # }
 
 
+    # Close session.
+    def close(self):
+    # {
+        self._session.close()
+    # }
+
+
     # Get html data.
     def datas(self, url_path):
     # {
@@ -95,6 +102,9 @@ def main():
 
     with open('test.html', 'wb') as fd:
         fd.write(datas.content)
+
+    # close.
+    login.close()
 # }
 
 
