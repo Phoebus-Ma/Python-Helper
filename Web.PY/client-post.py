@@ -79,6 +79,8 @@ class login_github():
             data    = data,
             headers = self._headers
         )
+
+        print(res.status_code)
     # }
 # }
 
