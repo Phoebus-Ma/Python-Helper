@@ -29,7 +29,111 @@ No, Python has sqlite3 built in.
 
 3. MySQL
 
-3.1 Download and install MySQL:  .
+Example for Windows:
+
+3.1 Download MySQL zip file
+
+    https://dev.mysql.com/downloads/mysql/
+
+3.2 Unzip MySQL
+
+    Such as: Unzip to path "D:\software\mysql"
+
+3.3 Create .ini file
+
+```bash
+[client]
+# Set default file format
+default-character-set=utf8
+
+[mysqld]
+# Set port.
+port = 3306
+
+# Set MySQL unzip path
+basedir=D:\\software\\mysql
+
+# Set the maximum number of database connections.
+max_connections=20
+
+# Set server file format.
+character-set-server=utf8
+
+# The default storage engine to use when creating new tables.
+default-storage-engine=INNODB
+```
+
+3.4 Run cmd.exe as admin
+
+```console
+$ D:
+$ cd D:\software\mysql\bin
+D:\software\mysql\bin> $ mysqld.exe --initialize --console
+
+2022-03-29T08:15:08.949195Z 0 [System] [MY-013169] [Server] D:\software\mysql\bin\mysqld.exe (mysqld 8.0.28) initializing of server in progress as process 7204
+2022-03-29T08:15:08.963463Z 0 [Warning] [MY-013242] [Server] --character-set-server: 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+2022-03-29T08:15:09.129045Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2022-03-29T08:15:16.230495Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2022-03-29T08:15:29.018288Z 6 [Note] [MY-010454] [Server] A temporary password is generated for root@localhost: &y:r2tIwkglW
+
+```
+
+The "&y:r2tIwkglW" is MySQL Initial password.
+
+```console
+$ mysqld --initialize-insecure
+$ mysqld install
+$ net start mysql
+The MySQL service is starting...
+The MySQL service was started successfully.
+```
+
+```console
+$ mysql -u root -p
+Enter password: &y:r2tIwkglW
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.28
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> alter user user() identified by "123456";
+Query OK, 0 rows affected (0.23 sec)
+
+mysql> quit
+Bye
+
+```
+
+The password already changed to 123456.
+
+3.5 Python connect driver
+
+3.5.1 mysql-connector-python
+
+The "mysql-connector-python" is official driver.
+
+`Note: if mysql version > 8, you need install "mysql-connector-python", not "mysql-connector"`
+
+key_word: caching_sha2_password
+
+```console
+pip install mysql-connector-python
+```
+
+3.5.2 pymysql
+
+```console
+pip install pymysql
+```
+
+Either "mysql-connector" or "pymysql" will work.
 
 
 ### Example:
