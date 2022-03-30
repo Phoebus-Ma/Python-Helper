@@ -9,7 +9,7 @@ import sys
 import subprocess
 
 
-# subproc_popen - .
+# subproc_popen - Cross-platform test.
 def subproc_popen():
 # {
     if 'win32' == sys.platform:
@@ -65,7 +65,7 @@ def main():
     # Example 1: Shell command.
     subproc_cmd()
 
-    # Example 2: .
+    # Example 2: Cross-platform test.
     subproc_popen()
 
     return 0
