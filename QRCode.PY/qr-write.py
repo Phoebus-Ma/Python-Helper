@@ -55,7 +55,7 @@ def main():
     print('Done 1.')
 
     # Example 2: Create qrcode by parameters.
-    print('-----------Example 1-----------')
+    print('-----------Example 2-----------')
     qr_write_by_args(data)
     print('Done 2.')
 # }
