@@ -1,6 +1,6 @@
 ### Description
 
-Encryption test for python.
+Encrypt/decrypt test for python.
 
 
 
@@ -12,14 +12,15 @@ Python 3 for Windows/Linux/MacOS.
 
 ### Feature
 
-1. encrypt-md5.py   ---- MD5 encryption example.
-2. encrypt-sha1.py  ---- SHA1 encryption example.
+1. encrypt-md5.py   ---- MD5 encrypt/decrypt example.
+2. encrypt-sha.py   ---- SHA encrypt/decrypt example.
+3. encrypt-des.py   ---- DES encrypt/decrypt example.
 
 
 
 ### Example:
 
-1. MD5 Encryption Test:
+1. MD5 encrypt/decrypt Test:
 
 ```console
 $ python encrypt-md5.py
@@ -28,7 +29,7 @@ Source data:    To be No.1
 Dest data:      dee8499f1eef6008929331293d92a8fe
 ```
 
-2. SHA1/SHA256/SHA384/SHA512 Encryption Test:
+2. SHA1/SHA256/SHA384/SHA512 encrypt/decrypt Test:
 
 ```console
 $ python encrypt-sha.py
