@@ -14,9 +14,11 @@ Python 3 for Windows/Linux/MacOS.
 $ pip install ntplib
 ```
 
+
 ### Feature
 
 1. timebase-ntp.py      ---- Get internet time from NTP server.
+2. timebase-show.py     ---- Dynamic print local time.
 
 
 ### Example:
@@ -28,7 +30,10 @@ $ python timebase-ntp.py
 Sat Jul  9 20:46:09 2022
 ```
 
-2. test:
+2. Dynamic print local time test:
 ```console
+$ python timebase-show.py
 
+Press Ctrl + C to quit.
+Fri Jul 15 14:53:52 2022
 ```

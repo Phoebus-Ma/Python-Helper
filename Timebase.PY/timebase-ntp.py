@@ -1,5 +1,5 @@
 ###
-# Python read qrcode information example.
+# Python get internet time example.
 # 
 # License - MIT.
 ###
