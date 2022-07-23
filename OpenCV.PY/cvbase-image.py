@@ -1,5 +1,5 @@
 ###
-# Python opencv operate image example.
+# Python opencv operating image example.
 # 
 # License - MIT.
 ###

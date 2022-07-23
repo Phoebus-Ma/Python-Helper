@@ -17,7 +17,8 @@ $ pip install opencv-python
 
 ### Feature
 
-1. cvbase-image.py          ---- Get internet time from NTP server.
+1. cvbase-image.py          ---- Use opencv operating image.
+2. cvbase-video.py          ---- Use opencv display video.
 
 
 ### Example:
@@ -32,7 +33,9 @@ $ python cvbase-image.py
 ... ...
 ```
 
-2. test:
+2. Display video use opencv:
 ```console
+$ python cvbase-video.py
 
+Press ESC to quit.
 ```
