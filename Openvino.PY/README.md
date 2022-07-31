@@ -27,26 +27,37 @@ $ omz_converter --name googlenet-v1
 
 ### Feature
 
-1. image-classification.py      ---- Image classification for deep learning model.
+1. image-classification.py          ---- Image classification for deep learning model.
+1. image-classification-async.py    ---- Asynchronous Image classification for deep learning model.
 
 
 ### Example:
 
 1. Image classification test:
 ```console
-$ python image-classification.py public/googlenet-v1/FP32/googlenet-v1.xml banana.jpg GPU
+$ python image-classification.py public/googlenet-v1/FP32/googlenet-v1.xml images/banana.jpg GPU
 
 banana, probability: 0.9990779.
 
-$ python image-classification.py public/googlenet-v1/FP32/googlenet-v1.xml car.bmp CPU
+$ python image-classification.py public/googlenet-v1/FP32/googlenet-v1.xml images/car.bmp CPU
 
 minivan, probability: 0.8150495.
 ```
 
-2. test:
+2. Image classification async test:
 ```console
-$ 
+$ copy images/banana.jpg images/banana1.jpg
+$ copy images/banana.jpg images/banana2.jpg
+$ copy images/banana.jpg images/banana3.jpg
+$ python image-classification-async.py public/googlenet-v1/FP32/googlenet-v1.xml images/*.jpg CPU
+
+banana, probability: 0.9990778.
+banana, probability: 0.9990778.
+banana, probability: 0.9990778.
+banana, probability: 0.9990778.
 ```
+
+*Note: In addition to googlenet-v1 model file, you can use other model files, such as alexnet.*
 
 ### Resource
 
