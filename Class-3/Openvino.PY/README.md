@@ -22,6 +22,7 @@ $ omz_converter --name googlenet-v1
 - Step 2:
 
 [download banana image](https://storage.openvinotoolkit.org/data/test_data/images/banana.jpg)
+
 [download car image](https://storage.openvinotoolkit.org/data/test_data/images/car.bmp)
 
 
@@ -34,6 +35,9 @@ $ omz_converter --name googlenet-v1
 ### Example:
 
 1. Image classification test:
+
+*Note: In addition to googlenet-v1 model file, you can use other model files, such as alexnet.*
+
 ```console
 $ python image-classification.py public/googlenet-v1/FP32/googlenet-v1.xml images/banana.jpg GPU
 
@@ -45,6 +49,9 @@ minivan, probability: 0.8150495.
 ```
 
 2. Image classification async test:
+
+*Note: In addition to googlenet-v1 model file, you can use other model files, such as alexnet.*
+
 ```console
 $ copy images/banana.jpg images/banana1.jpg
 $ copy images/banana.jpg images/banana2.jpg
@@ -57,7 +64,18 @@ banana, probability: 0.9990778.
 banana, probability: 0.9990778.
 ```
 
-*Note: In addition to googlenet-v1 model file, you can use other model files, such as alexnet.*
+3. Image ssd test:
+
+*Note: you can use mobilenet-ssd, ssdlite_mobilenet_v2, person-detection-retail-0013, etc.*
+
+```console
+$ omz_downloader --name mobilenet-ssd
+$ omz_converter --name mobilenet-ssd
+$ python image_ssd_v1.py public/mobilenet-ssd/FP32/mobilenet-ssd.xml images/banana.jpg GPU
+
+Found: confidence = 0.58, coords = (21, 97), (279, 216)
+```
+
 
 ### Resource
 
