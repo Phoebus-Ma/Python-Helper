@@ -19,6 +19,7 @@ $ pip install ntplib
 
 1. timebase-ntp.py      ---- Get internet time from NTP server.
 2. timebase-show.py     ---- Dynamic print local time.
+3. timebase-alarm.py    ---- Alarm clock example, format: 09:30:00, 17:59:59.
 
 
 ### Example:
