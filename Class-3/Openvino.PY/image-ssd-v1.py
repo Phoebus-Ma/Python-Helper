@@ -18,6 +18,7 @@ from openvino.inference_engine import IECore
 def main() -> int:
 # {
     # 1. Get input parameters.
+    # ----------------------------------------------------------------
     if 4 != len(sys.argv):
         print('Parameters error.')
         return -1

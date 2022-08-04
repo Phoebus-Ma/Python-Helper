@@ -29,7 +29,9 @@ $ omz_converter --name googlenet-v1
 ### Feature
 
 1. image-classification.py          ---- Image classification for deep learning model.
-1. image-classification-async.py    ---- Asynchronous Image classification for deep learning model.
+2. image-classification-async.py    ---- Asynchronous Image classification for deep learning model.
+3. image-ssd-v1.py                  ---- Image SSD test, Note: It may no longer be available in the latest version.
+4. image-ssd-v2.py                  ---- Image SSD test version 2.
 
 
 ### Example:
@@ -67,15 +69,24 @@ banana, probability: 0.9990778.
 3. Image ssd test:
 
 *Note: you can use mobilenet-ssd, ssdlite_mobilenet_v2, person-detection-retail-0013, etc.*
+*Warning: It may no longer be available in the latest version.*
 
 ```console
 $ omz_downloader --name mobilenet-ssd
 $ omz_converter --name mobilenet-ssd
-$ python image_ssd_v1.py public/mobilenet-ssd/FP32/mobilenet-ssd.xml images/banana.jpg GPU
+$ python image-ssd-v1.py public/mobilenet-ssd/FP32/mobilenet-ssd.xml images/banana.jpg GPU
 
 Found: confidence = 0.58, coords = (21, 97), (279, 216)
 ```
 
+4. Image ssd test version 2:
+
+```console
+$ omz_downloader --name person-detection-retail-0013
+$ python image-ssd-v2.py intel/person-detection-retail-0013/FP32/person-detection-retail-0013.xml images/person_detection.png CPU
+
+Found: confidence = 0.72, coords = (852, 187), (983, 520)
+```
 
 ### Resource
 
