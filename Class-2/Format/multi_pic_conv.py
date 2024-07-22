@@ -15,6 +15,7 @@ def main():
     i = 0
 
     for x in os.listdir(path):
+    # {
         # Read original picture.
         image = cv2.imread(r'{}\{}'.format(path, x))
 
@@ -22,6 +23,7 @@ def main():
         cv2.imwrite(r'{}\{}.png'.format(path, i), image)
 
         i += 1
+    # }
 # }
 
 
