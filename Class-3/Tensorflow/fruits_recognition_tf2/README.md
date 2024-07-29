@@ -86,14 +86,24 @@ Directory structure:
 
 Note: You can add fruits class, such as pear, grape, mango, etc.
 
+1. Train mobilenet model:
+
 ```bash
 $ python train_mobilenet.py
+```
+
+2. Train CNN model:
+
+```bash
+$ python train_cnn.py
 ```
 
 If everything goes well, you get a model in "models" folder.
 
 
 ## 3.2 Use model
+
+Default use mobilenet model, you can edit "default_model" to use CNN model:
 
 ```bash
 $ python main.py

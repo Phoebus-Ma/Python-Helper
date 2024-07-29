@@ -1,5 +1,5 @@
 ###
-# Tensorflow2 train mobilenet model.
+# Tensorflow2 train CNN model.
 #
 # License - MIT.
 ###
@@ -36,38 +36,46 @@ def data_load(data_dir, test_data_dir, img_height, img_width, batch_size):
 # }
 
 
-# Building the mobilenet model.
-# Load the model, specify the size of the image processing and whether to perform transfer learning.
+# Building the CNN model.
 def model_load(IMG_SHAPE = (224, 224, 3), class_num = 12):
 # {
-    # Normalization is not needed in the process of fine-tuning.
-    # Loading the pre-trained mobilenet model.
-    base_model = tf.keras.applications.MobileNetV2(input_shape = IMG_SHAPE,
-                                                   include_top = False,
-                                                   weights     = 'imagenet')
-
-    # The backbone parameters of the model are frozen.
-    base_model.trainable = False
+    # Building the Model.
     model = tf.keras.models.Sequential([
-        # Perform normalization.
-        tf.keras.layers.experimental.preprocessing.Rescaling(1. / 127.5, offset = -1, input_shape = IMG_SHAPE),
+        # Normalize the model and convert numbers between 0 and 255 to between 0 and 1.
+        tf.keras.layers.experimental.preprocessing.Rescaling(1. / 255, input_shape = IMG_SHAPE),
 
-        # Set up the backbone model.
-        base_model,
+        # Convolution layer, the output of this convolution layer is 32 channels,
+        # the size of the convolution kernel is 3 * 3, and the activation function is relu.
+        tf.keras.layers.Conv2D(32, (3, 3), activation = 'relu'),
 
-        # Global average pooling is performed on the output of the backbone model.
-        tf.keras.layers.GlobalAveragePooling2D(),
+        # Add a pooling layer, the kernel size of the pooling is 2 * 2.
+        tf.keras.layers.MaxPooling2D(2, 2),
 
-        # It is mapped to the final number of classes through the fully connected layer.
+        # Add another convolution.
+        # Convolution layer, output is 64 channels,
+        # convolution kernel size is 3 * 3, activation function is relu.
+        tf.keras.layers.Conv2D(64, (3, 3), activation = 'relu'),
+
+        # Pooling layer, maximum pooling, pooling operation on 2 * 2 area.
+        tf.keras.layers.MaxPooling2D(2, 2),
+
+        # Convert the two-dimensional output to one-dimensional.
+        tf.keras.layers.Flatten(),
+
+        # The same 128 dense layers, and 10 output layers as in the pre-convolution example:
+        tf.keras.layers.Dense(128, activation = 'relu'),
+
+        # The model is output as a neuron of class name length through the softmax function,
+        # and the activation function uses the probability value corresponding to softmax.
         tf.keras.layers.Dense(class_num, activation = 'softmax')
     ])
 
     # Output information.
     model.summary()
 
-    # The optimizer of the model training is adam optimizer,
+    # The optimizer of the model training is sgd optimizer,
     # and the loss function of the model is the cross-entropy loss function.
-    model.compile(optimizer = 'adam', loss = 'categorical_crossentropy', metrics = ['accuracy'])
+    model.compile(optimizer = 'sgd', loss = 'categorical_crossentropy', metrics = ['accuracy'])
 
     return model
 # }
@@ -96,14 +104,14 @@ def train(epochs):
     end_time = time()
     run_time = end_time - begin_time
 
-    print('Total running time: ', run_time, 's')
+    print('Total running time: ', run_time, "s")
 # }
 
 
 if '__main__' == __name__:
     train_folder  = 'data/train'
     val_folder    = 'data/val'
-    default_model = 'models/mobilenet_fruits.h5'
+    default_model = 'models/cnn_fruits.h5'
 
     # train times.
     train(epochs = 50)
