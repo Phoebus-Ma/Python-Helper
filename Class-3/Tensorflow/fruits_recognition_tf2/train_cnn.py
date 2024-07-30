@@ -104,7 +104,7 @@ def train(epochs):
     end_time = time()
     run_time = end_time - begin_time
 
-    print('Total running time: ', run_time, "s")
+    print('Total running time: ', run_time, 's')
 # }
 
 
