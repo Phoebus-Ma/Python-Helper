@@ -152,7 +152,14 @@ $ python train_cnn.py
 If everything goes well, you get a model in "models" folder.
 
 
-## 3.2 Use model
+## 3.2 Test model
+
+```bash
+$ python test_model.py
+```
+
+
+## 3.3 Use model
 
 Default use mobilenet model, you can edit "default_model" to use CNN model:
 
