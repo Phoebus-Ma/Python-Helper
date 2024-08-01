@@ -1,7 +1,7 @@
 
 # Introduction
 
-Class-1 is PyQt6 base example.
+Class-1 is PyQt6 control examples.
 
 
 # Enviorment
@@ -17,3 +17,8 @@ in China:
 $ python -m pip install --upgrade pip
 $ pip install pyqt6 -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+
+
+# License
+
+MIT License.

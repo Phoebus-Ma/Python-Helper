@@ -1,7 +1,7 @@
 
 # Introduction
 
-Class-0 is PyQt6 documents.
+Class-2 is PyQt6 applications.
 
 
 # License

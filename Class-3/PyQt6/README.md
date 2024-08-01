@@ -4,7 +4,8 @@
 QT6 for python.
 
 - Class-0 : PyQt6 documents.
-- Class-1 : PyQt6 base example.
+- Class-1 : PyQt6 control examples.
+- Class-2 : PyQt6 applications.
 
 
 # Platform
