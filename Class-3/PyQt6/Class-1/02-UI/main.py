@@ -15,6 +15,8 @@ def main():
     ui = uic.loadUi('hello.ui')
     ui.show()
 
+    print(ui.label.text())
+
     app.exec()
 # }
 
