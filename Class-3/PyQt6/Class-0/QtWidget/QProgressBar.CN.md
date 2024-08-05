@@ -142,7 +142,7 @@ QProgressBar 小部件提供水平或垂直进度条。
 
 此属性保存的是进度条的对齐方式。
 
-访问功能：
+访问函数：
 
 - alignment()
 - setAlignment()
@@ -157,7 +157,7 @@ QProgressBar 小部件提供水平或垂直进度条。
 
 默认值为“%p%”。
 
-访问功能：
+访问函数：
 
 - format()
 - setFormat()
@@ -171,7 +171,7 @@ QProgressBar 小部件提供水平或垂直进度条。
 
 如果此属性为真，进度条将朝另一个方向增长（例如从右到左）。默认情况下，进度条不会反转。
 
-访问功能：
+访问函数：
 
 - invertedAppearance()
 - setInvertedAppearance()
@@ -184,7 +184,7 @@ QProgressBar 小部件提供水平或垂直进度条。
 
 设置此属性时，会根据需要调整最小值以确保范围保持有效。如果当前值超出新范围，则使用 reset() 重置进度条。
 
-访问功能：
+访问函数：
 
 - maximum()
 - setMaximum()
@@ -197,7 +197,7 @@ QProgressBar 小部件提供水平或垂直进度条。
 
 设置此属性时，会根据需要调整最大值以确保范围保持有效。如果当前值超出新范围，则使用 reset() 重置进度条。
 
-访问功能：
+访问函数：
 
 - minimum()
 - setMinimum()
@@ -210,7 +210,7 @@ QProgressBar 小部件提供水平或垂直进度条。
 
 方向必须是 Qt::Horizo​​ntal（默认）或 Qt::Vertical。
 
-访问功能：
+访问函数：
 
 - orientation()
 - setOrientation()
@@ -227,7 +227,7 @@ QProgressBar 小部件提供水平或垂直进度条。
 
 在默认实现中，文本要么包含指示迄今为止进度的百分比值，要么为空白，因为进度条处于重置状态。
 
-访问功能：
+访问函数：
 
 - text()
 
@@ -239,7 +239,7 @@ QProgressBar 小部件提供水平或垂直进度条。
 
 此属性对水平进度条没有影响。默认情况下，阅读方向为 TopToBottom 。
 
-访问功能：
+访问函数：
 
 - textDirection()
 - setTextDirection()
@@ -252,7 +252,7 @@ QProgressBar 小部件提供水平或垂直进度条。
 
 样式可能会忽略此属性（例如，QMacStyle 从不绘制文本）。
 
-访问功能：
+访问函数：
 
 - isTextVisible()
 - setTextVisible()
@@ -265,7 +265,7 @@ QProgressBar 小部件提供水平或垂直进度条。
 
 尝试将当前值更改为最小-最大范围之外的值不会对当前值产生任何影响。
 
-访问功能：
+访问函数：
 
 - value()
 - setValue()

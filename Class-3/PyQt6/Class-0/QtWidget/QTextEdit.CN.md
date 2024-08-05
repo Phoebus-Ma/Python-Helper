@@ -449,7 +449,7 @@ def insertFromMimeData(self, source):
 
 此属性的默认值为 true。
 
-访问功能：
+访问函数：
 
 - acceptRichText()
 - setAcceptRichText()
@@ -464,7 +464,7 @@ def insertFromMimeData(self, source):
 
 目前，提供的唯一自动格式化功能是 AutoBulletList ；Qt 的未来版本可能会提供更多功能。
 
-访问功能：
+访问函数：
 
 - autoFormatting()
 - setAutoFormatting()
@@ -475,7 +475,7 @@ def insertFromMimeData(self, source):
 
 此属性指定光标的宽度（以像素为单位）。默认值为 1。
 
-访问功能：
+访问函数：
 
 - cursorWidth()
 - setCursorWidth()
@@ -486,7 +486,7 @@ def insertFromMimeData(self, source):
 
 此属性保存文本编辑器的底层文档。
 
-访问功能：
+访问函数：
 
 - document()
 - setDocument()
@@ -499,7 +499,7 @@ def insertFromMimeData(self, source):
 
 默认情况下，对于新创建的空文档，此属性包含一个空字符串。
 
-访问功能：
+访问函数：
 
 - documentTitle()
 - setDocumentTitle()
@@ -516,7 +516,7 @@ setHtml() 更改文本编辑的文本。任何先前的文本都将被删除，�
 
 默认情况下，对于新创建的空文档，此属性包含用于描述没有正文的 HTML 4.0 文档的文本。
 
-访问功能：
+访问函数：
 
 - toHtml()
 - setHtml()
@@ -532,7 +532,7 @@ setHtml() 更改文本编辑的文本。任何先前的文本都将被删除，�
 
 默认情况下，此属性包含 0 值。
 
-访问功能：
+访问函数：
 
 - lineWrapColumnOrWidth()
 - setLineWrapColumnOrWidth()
@@ -545,7 +545,7 @@ setHtml() 更改文本编辑的文本。任何先前的文本都将被删除，�
 
 默认模式为 WidgetWidth，这会导致单词在文本编辑的右边缘换行。换行发生在空白处，保持整个单词完整。如果您希望在单词内换行，请使用 setWordWrapMode() 。如果您设置了 FixedPixelWidth 或 FixedColumnWidth 的换行模式，您还应该使用所需的宽度调用 setLineWrapColumnOrWidth()。
 
-访问功能：
+访问函数：
 
 - lineWrapMode()
 - setLineWrapMode()
@@ -569,7 +569,7 @@ markdown 字符串中包含的 HTML 的解析方式与 setHtml 相同；但是�
 
 默认是MarkdownDialectGitHub。
 
-访问功能：
+访问函数：
 
 - toMarkdown()
 - setMarkdown()
@@ -587,7 +587,7 @@ markdown 字符串中包含的 HTML 的解析方式与 setHtml 相同；但是�
 
 默认情况下，此属性为 false（新文本不会覆盖现有文本）。
 
-访问功能：
+访问函数：
 
 - overwriteMode()
 - setOverwriteMode()
@@ -602,7 +602,7 @@ markdown 字符串中包含的 HTML 的解析方式与 setHtml 相同；但是�
 
 默认情况下，此属性包含一个空字符串。
 
-访问功能：
+访问函数：
 
 - placeholderText()
 - setPlaceholderText()
@@ -619,7 +619,7 @@ markdown 字符串中包含的 HTML 的解析方式与 setHtml 相同；但是�
 
 默认情况下，对于没有内容的编辑器，此属性包含一个空字符串。
 
-访问功能：
+访问函数：
 
 - toPlainText()
 - setPlainText()
@@ -634,7 +634,7 @@ markdown 字符串中包含的 HTML 的解析方式与 setHtml 相同；但是�
 
 此属性的默认值为 false。
 
-访问功能：
+访问函数：
 
 - isReadOnly()
 - setReadOnly()
@@ -647,7 +647,7 @@ markdown 字符串中包含的 HTML 的解析方式与 setHtml 相同；但是�
 ​​
 在某些情况下，文本编辑不应允许用户使用 Tab 键输入制表符或更改缩进，因为这会破坏焦点链。默认值为 false。
 
-访问功能：
+访问函数：
 
 - tabChangesFocus()
 - setTabChangesFocus()
@@ -662,7 +662,7 @@ markdown 字符串中包含的 HTML 的解析方式与 setHtml 相同；但是�
 
 请勿设置小于 QChar::VisualTabCharacter 字符的 Horizo​​ntalAdvance() 的值，否则制表符将绘制不完整。
 
-访问功能：
+访问函数：
 
 - tabStopDistance()
 - setTabStopDistance()
@@ -675,7 +675,7 @@ markdown 字符串中包含的 HTML 的解析方式与 setHtml 相同；但是�
 
 默认值取决于 QTextEdit 是只读的还是可编辑的，以及它是否是 QTextBrowser。
 
-访问功能：
+访问函数：
 
 - textInteractionFlags()
 - setTextInteractionFlags()
@@ -688,7 +688,7 @@ markdown 字符串中包含的 HTML 的解析方式与 setHtml 相同；但是�
 
 仅当此属性为真，并且存在可以撤消（或重做）的操作时，用户才可以撤消或重做操作。
 
-访问功能：
+访问函数：
 
 - isUndoRedoEnabled()
 - setUndoRedoEnabled()

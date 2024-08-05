@@ -371,7 +371,7 @@ if msgBox.clickedButton() == connectButton:
 
 默认情况下，此属性包含一个空字符串。
 
-访问功能：
+访问函数：
 
 - detailedText()
 - setDetailedText()
@@ -394,7 +394,7 @@ if msgBox.clickedButton() == connectButton:
 
 用于显示实际图标的像素图取决于当前的 GUI 样式。您还可以通过设置图标像素图属性为图标设置自定义像素图。
 
-访问功能：
+访问函数：
 
 - icon()
 - setIcon()
@@ -409,7 +409,7 @@ if msgBox.clickedButton() == connectButton:
 
 默认情况下，此属性未定义。
 
-访问功能：
+访问函数：
 
 - iconPixmap()
 - setIconPixmap()
@@ -424,7 +424,7 @@ if msgBox.clickedButton() == connectButton:
 
 默认情况下，此属性包含一个空字符串。
 
-访问功能：
+访问函数：
 
 - informativeText()
 - setInformativeText()
@@ -443,7 +443,7 @@ if msgBox.clickedButton() == connectButton:
 
 在更改其他属性后设置选项可能会导致这些值不起作用。
 
-访问功能：
+访问函数：
 
 - options()
 - setOptions()
@@ -458,7 +458,7 @@ if msgBox.clickedButton() == connectButton:
 
 默认情况下，此属性不包含任何标准按钮。
 
-访问功能：
+访问函数：
 
 - standardButtons()
 - setStandardButtons()
@@ -475,7 +475,7 @@ if msgBox.clickedButton() == connectButton:
 
 此属性的默认值为空字符串。
 
-访问功能：
+访问函数：
 
 - text()
 - setText()
@@ -490,7 +490,7 @@ if msgBox.clickedButton() == connectButton:
 
 默认格式为 Qt::AutoText。
 
-访问功能：
+访问函数：
 
 - textFormat()
 - setTextFormat()
@@ -503,7 +503,7 @@ if msgBox.clickedButton() == connectButton:
 
 默认值取决于样式。
 
-访问功能：
+访问函数：
 
 - textInteractionFlags()
 - setTextInteractionFlags()

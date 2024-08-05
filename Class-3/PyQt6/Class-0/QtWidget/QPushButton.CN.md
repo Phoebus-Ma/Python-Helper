@@ -110,7 +110,7 @@ button = QPushButton("Download", self)
 
 有关默认和自动默认如何交互的详细信息，请参阅默认属性。
 
-访问功能：
+访问函数：
 
 - autoDefault()
 - setAutoDefault()
@@ -133,7 +133,7 @@ button = QPushButton("Download", self)
 
 该属性的默认值为 false。
 
-访问功能：
+访问函数：
 
 - isDefault()
 - setDefault()
@@ -146,7 +146,7 @@ button = QPushButton("Download", self)
 
 此属性的默认值为 false。如果设置了此属性，则大多数样式将不会绘制按钮背景，除非按下按钮。setAutoFillBackground() 可用于确保使用 QPalette::Button 画笔填充背景。
 
-访问功能：
+访问函数：
 
 - isFlat()
 - setFlat()

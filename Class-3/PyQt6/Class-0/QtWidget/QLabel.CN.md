@@ -179,7 +179,7 @@ phoneLabel.setBuddy(phoneEdit)
 
 默认情况下，标签的内容是左对齐且垂直居中。
 
-访问功能：
+访问函数：
 
 - alignment()
 - setAlignment()
@@ -193,7 +193,7 @@ phoneLabel.setBuddy(phoneEdit)
 
 默认情况下，此属性为 false。
 
-访问功能：
+访问函数：
 
 - hasSelectedText()
 
@@ -208,7 +208,7 @@ phoneLabel.setBuddy(phoneEdit)
 
 默认情况下，缩进为 -1，这意味着有效缩进按上面描述的方式计算。
 
-访问功能：
+访问函数：
 
 - indent()
 - setIndent()
@@ -222,7 +222,7 @@ phoneLabel.setBuddy(phoneEdit)
 
 默认边距为 0。
 
-访问功能：
+访问函数：
 
 - margin()
 - setMargin()
@@ -234,7 +234,7 @@ phoneLabel.setBuddy(phoneEdit)
 
 默认值为 false。
 
-访问功能：
+访问函数：
 
 - openExternalLinks()
 - setOpenExternalLinks()
@@ -246,7 +246,7 @@ phoneLabel.setBuddy(phoneEdit)
 
 设置像素图会清除所有先前的内容。好友快捷方式（如果有）将被禁用。
 
-访问功能：
+访问函数：
 
 - pixmap()
 - setPixmap()
@@ -260,7 +260,7 @@ phoneLabel.setBuddy(phoneEdit)
 
 此属性的默认值为 false。
 
-访问功能：
+访问函数：
 
 - hasScaledContents()
 - setScaledContents()
@@ -274,7 +274,7 @@ phoneLabel.setBuddy(phoneEdit)
 
 默认情况下，此属性包含一个空字符串。
 
-访问功能：
+访问函数：
 
 - selectedText()
 
@@ -291,7 +291,7 @@ phoneLabel.setBuddy(phoneEdit)
 
 请注意，QLabel 非常适合显示小型富文本文档，例如从标签的调色板和字体属性获取其文档特定设置（字体、文本颜色、链接颜色）的小型文档。对于大型文档，请改用只读模式的 QTextEdit。QTextEdit 还可以在必要时提供滚动条。
 
-访问功能：
+访问函数：
 
 - text()
 - setText()
@@ -305,7 +305,7 @@ phoneLabel.setBuddy(phoneEdit)
 
 默认格式为 Qt::AutoText。
 
-访问功能：
+访问函数：
 
 - textFormat()
 - setTextFormat()
@@ -319,7 +319,7 @@ phoneLabel.setBuddy(phoneEdit)
 
 默认值为 Qt::LinksAccessibleByMouse。
 
-访问功能：
+访问函数：
 
 - textInteractionFlags()
 - setTextInteractionFlags()
@@ -333,7 +333,7 @@ phoneLabel.setBuddy(phoneEdit)
 
 默认情况下，自动换行处于禁用状态。
 
-访问功能：
+访问函数：
 
 - wordWrap()
 - setWordWrap()
