@@ -1,4 +1,6 @@
 
+[Chinese Doc](QLabel.CN.md)
+
 # class QLabel
 
 The QLabel widget provides a text or image display.

@@ -1,4 +1,6 @@
 
+[Chinese Doc](QPushButton.CN.md)
+
 # class QPushButton
 
 The QPushButton widget provides a command button.
@@ -98,7 +100,7 @@ In Qt, the QAbstractButton base class provides most of the modes and other API, 
 
 
 --------------------------------
-### property autoDefault : bool
+## property autoDefault : bool
 
 This property holds whether the push button is an auto default button.
 
