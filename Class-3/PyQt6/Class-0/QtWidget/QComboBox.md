@@ -10,219 +10,219 @@ The QComboBox widget combines a button with a dropdown list.
 
 ## Properties
 
-- [count]()
+- [count](#property-count--int)
 
     The number of items in the combobox.
 
-- [currentData]()
+- [currentData](#property-currentdata--object)
 
     The data for the current item.
 
-- [currentIndex]()
+- [currentIndex](#property-currentindex--int)
 
     The index of the current item in the combobox.
 
-- [currentText]()
+- [currentText](#property-currenttext--str)
 
     The current text.
 
-- [duplicatesEnabled]()
+- [duplicatesEnabled](#property-duplicatesenabled--bool)
 
     Whether the user can enter duplicate items into the combobox.
 
-- [editable]()
+- [editable](#property-editable--bool)
 
     Whether the combo box can be edited by the user.
 
-- [frame]()
+- [frame](#property-frame--bool)
 
     Whether the combo box draws itself with a frame.
 
-- [iconSize]()
+- [iconSize](#property-iconsize--qsize)
 
     The size of the icons shown in the combobox.
 
-- [insertPolicy]()
+- [insertPolicy](#property-insertpolicy--qcomboboxinsertpolicy)
 
     The policy used to determine where user-inserted items should appear in the combobox.
 
-- [maxCount]()
+- [maxCount](#property-maxcount--int)
 
     The maximum number of items allowed in the combobox.
 
-- [maxVisibleItems]()
+- [maxVisibleItems](#property-maxvisibleitems--int)
 
     The maximum allowed size on screen of the combo box, measured in items.
 
-- [minimumContentsLength]()
+- [minimumContentsLength](#property-minimumcontentslength--int)
 
     The minimum number of characters that should fit into the combobox.
 
-- [modelColumn]()
+- [modelColumn](#property-modelcolumn--int)
 
     The column in the model that is visible.
 
-- [placeholderText]()
+- [placeholderText](#property-placeholdertext--str)
 
     Sets a placeholderText text shown when no valid index is set.
 
-- [sizeAdjustPolicy]()
+- [sizeAdjustPolicy](#property-sizeadjustpolicy--qcomboboxsizeadjustpolicy)
 
     The policy describing how the size of the combobox changes when the content changes.
 
 
 ## Methods
 
-- [def \_\_init__()]()
+- [def \_\_init__()](#initparentnone)
 
-- [def addItem()]()
+- [def addItem()](#additemicon-text-userdatanone)
 
-- [def addItems()]()
+- [def addItems()](#additemstexts)
 
-- [def completer()]()
+- [def completer()](#completer)
 
-- [def count()]()
+- [def count()](#count)
 
-- [def currentData()]()
+- [def currentData()](#currentdataroleqtuserrole)
 
-- [def currentIndex()]()
+- [def currentIndex()](#currentindex)
 
-- [def currentText()]()
+- [def currentText()](#currenttext)
 
-- [def duplicatesEnabled()]()
+- [def duplicatesEnabled()](#duplicatesenabled)
 
-- [def findData()]()
+- [def findData()](#finddatadata-roleqtuserrole-flagsstatic_castqtmatchflagsqtmatchexactlyqtmatchcasesensitive)
 
-- [def findText()]()
+- [def findText()](#findtexttext-flagsstatic_castqtmatchflagsqtmatchexactlyqtmatchcasesensitive)
 
-- [def hasFrame()]()
+- [def hasFrame()](#hasframe)
 
-- [def iconSize()]()
+- [def iconSize()](#iconsize)
 
-- [def inputMethodQuery()]()
+- [def inputMethodQuery()](#inputmethodqueryquery-argument)
 
-- [def insertItem()]()
+- [def insertItem()](#insertitemindex-icon-text-userdatanone)
 
-- [def insertItems()]()
+- [def insertItems()](#insertitemsindex-texts)
 
-- [def insertPolicy()]()
+- [def insertPolicy()](#insertpolicy)
 
-- [def insertSeparator()]()
+- [def insertSeparator()](#insertseparatorindex)
 
-- [def isEditable()]()
+- [def isEditable()](#iseditable)
 
-- [def itemData()]()
+- [def itemData()](#itemdataindex-roleqtuserrole)
 
-- [def itemDelegate()]()
+- [def itemDelegate()](#itemdelegate)
 
-- [def itemIcon()]()
+- [def itemIcon()](#itemiconindex)
 
-- [def itemText()]()
+- [def itemText()](#itemtextindex)
 
-- [def lineEdit()]()
+- [def lineEdit()](#lineedit)
 
-- [def maxCount()]()
+- [def maxCount()](#maxcount)
 
-- [def maxVisibleItems()]()
+- [def maxVisibleItems()](#maxvisibleitems)
 
-- [def minimumContentsLength()]()
+- [def minimumContentsLength()](#minimumcontentslength)
 
-- [def model()]()
+- [def model()](#model)
 
-- [def modelColumn()]()
+- [def modelColumn()](#modelcolumn)
 
-- [def placeholderText()]()
+- [def placeholderText()](#placeholdertext)
 
-- [def removeItem()]()
+- [def removeItem()](#removeitemindex)
 
-- [def rootModelIndex()]()
+- [def rootModelIndex()](#rootmodelindex)
 
-- [def setCompleter()]()
+- [def setCompleter()](#setcompleterc)
 
-- [def setDuplicatesEnabled()]()
+- [def setDuplicatesEnabled()](#setduplicatesenabledenable)
 
-- [def setEditable()]()
+- [def setEditable()](#seteditableeditable)
 
-- [def setFrame()]()
+- [def setFrame()](#setframearg__1)
 
-- [def setIconSize()]()
+- [def setIconSize()](#seticonsizesize)
 
-- [def setInsertPolicy()]()
+- [def setInsertPolicy()](#setinsertpolicypolicy)
 
-- [def setItemData()]()
+- [def setItemData()](#setitemdataindex-value-roleqtuserrole)
 
-- [def setItemDelegate()]()
+- [def setItemDelegate()](#setitemdelegatedelegate)
 
-- [def setItemIcon()]()
+- [def setItemIcon()](#setitemiconindex-icon)
 
-- [def setItemText()]()
+- [def setItemText()](#setitemtextindex-text)
 
-- [def setLineEdit()]()
+- [def setLineEdit()](#setlineeditedit)
 
-- [def setMaxCount()]()
+- [def setMaxCount()](#setmaxcountmax)
 
-- [def setMaxVisibleItems()]()
+- [def setMaxVisibleItems()](#setmaxvisibleitemsmaxitems)
 
-- [def setMinimumContentsLength()]()
+- [def setMinimumContentsLength()](#setminimumcontentslengthcharacters)
 
-- [def setModelColumn()]()
+- [def setModelColumn()](#setmodelcolumnvisiblecolumn)
 
-- [def setPlaceholderText()]()
+- [def setPlaceholderText()](#setplaceholdertextplaceholdertext)
 
-- [def setRootModelIndex()]()
+- [def setRootModelIndex()](#setrootmodelindexindex)
 
-- [def setSizeAdjustPolicy()]()
+- [def setSizeAdjustPolicy()](#setsizeadjustpolicypolicy)
 
-- [def setValidator()]()
+- [def setValidator()](#setvalidatorv)
 
-- [def setView()]()
+- [def setView()](#setviewitemview)
 
-- [def sizeAdjustPolicy()]()
+- [def sizeAdjustPolicy()](#sizeadjustpolicy)
 
-- [def validator()]()
+- [def validator()](#validator)
 
-- [def view()]()
+- [def view()](#view)
 
 
 ## Virtual methods
 
-- [def hidePopup()]()
+- [def hidePopup()](#hidepopup)
 
-- [def initStyleOption()]()
+- [def initStyleOption()](#initstyleoptionoption)
 
-- [def setModel()]()
+- [def setModel()](#setmodelmodel)
 
-- [def showPopup()]()
+- [def showPopup()](#showpopup)
 
 
 ## Slots
 
-- [def clear()]()
+- [def clear()](#clear)
 
-- [def clearEditText()]()
+- [def clearEditText()](#clearedittext)
 
-- [def setCurrentIndex()]()
+- [def setCurrentIndex()](#setcurrentindexindex)
 
-- [def setCurrentText()]()
+- [def setCurrentText()](#setcurrenttexttext)
 
-- [def setEditText()]()
+- [def setEditText()](#setedittexttext)
 
 
 ## Signals
 
-- [def activated()]()
+- [def activated()](#activatedindex)
 
-- [def currentIndexChanged()]()
+- [def currentIndexChanged()](#currentindexchangedindex)
 
-- [def currentTextChanged()]()
+- [def currentTextChanged()](#currenttextchangedarg__1)
 
-- [def editTextChanged()]()
+- [def editTextChanged()](#edittextchangedarg__1)
 
-- [def highlighted()]()
+- [def highlighted()](#highlightedindex)
 
-- [def textActivated()]()
+- [def textActivated()](#textactivatedarg__1)
 
-- [def textHighlighted()]()
+- [def textHighlighted()](#texthighlightedarg__1)
 
 
 # Detailed Description
@@ -411,7 +411,6 @@ Access functions:
 
 This property holds the maximum number of items allowed in the combobox..
 
-
 By default, this property’s value is derived from the highest signed integer available (typically 2147483647).
 
 Access functions:
@@ -517,8 +516,7 @@ This signal is sent when the user chooses an item in the combobox. The item’s 
 Parameters:
 
 - text – str
-
-userData – object
+- userData – object
 
 Adds an item to the combobox with the given text, and containing the specified userData (stored in the Qt::UserRole). The item is appended to the list of existing items.
 
@@ -549,8 +547,6 @@ Adds each of the strings in the given texts to the combobox. Each item is append
 ## clear()
 
 Clears the combobox, removing all items.
-
-Note: If you have set an external model on the combobox this model will still be cleared when calling this function.
 
 
 --------------------------------
@@ -621,7 +617,6 @@ Parameters:
 - arg__1 – str
 
 This signal is emitted whenever currentText changes. The new value is passed as text.
-
 
 Notification signal of property currentText  .
 
